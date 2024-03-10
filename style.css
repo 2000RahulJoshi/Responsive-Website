@@ -71,10 +71,12 @@ html, body{
 .navRight:hover {
     background-color: black;
     color: white;
+    scale: 1.1;
 }
 
 .navRight a:hover{
     color: white;
+    scale: 1.1;
 }
 
 .navLeft a:hover{
@@ -160,7 +162,7 @@ html, body{
 }
 
 .reserveTicketButton:hover{
-    background-color: crimson;
+    scale: 1.1;
 }
 
 .topContainerRight h1{
@@ -224,8 +226,8 @@ html, body{
 }
 
 .createMemoryContainerTextThree:hover{
-    background-color: crimson;
     cursor: pointer;
+    scale: 1.1;
 }
 
 .imageSlides{
@@ -469,7 +471,7 @@ html, body{
 
 .aboutContainer{
     width: 100%;
-    padding: 8% 9% 7% 9%;
+    padding: 8% 9% 5% 9%;
 }
 
 .aboutContainerContent{
@@ -523,6 +525,89 @@ html, body{
 
 .lineTwo{
     border: 1px solid black;
+}
+
+.cards{
+    width: 100%;
+    padding: 4% 9% 6% 9%;
+    background-image: url(./images/imageTwenty.png), url(./images/imageTwentyOne.png);
+    background-repeat: no-repeat;
+    background-position: left -7rem top 1rem, right -13rem bottom 1rem;
+    background-size: 30rem 8rem, 35rem 5rem;
+}
+
+.cardsHeading{
+    text-align: center;
+    font-size: 34px;
+    line-height: 0.9;
+    padding-bottom: 6%;
+}
+
+.allCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardLeftArrow{
+    position: absolute;
+}
+
+.cardRightArrow{
+    position: absolute;
+}
+
+.cardOne,.cardTwo,.cardThree{
+    width: 31%;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 6% 0;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cardOne:hover,.cardTwo:hover,.cardThree:hover{
+    scale: 1.1;
+}
+
+.cardIcon{
+    padding-bottom: 6%;
+}
+
+.userCardName {
+    text-align: center;
+    font-weight: bold;
+    padding: 4% 0 5% 0;
+}
+
+.userCardDetail {
+    text-align: center;
+    padding: 0 6% 0 6%;
+    font-size: 18px;
+}
+
+.cardLeftArrow {
+    left: -3%;
+}
+
+.cardRightArrow {
+    right: -3%;
+}
+
+.cardLeftArrow, .cardRightArrow {
+    position: absolute;
+    font-size: 43px;
+    border: 2px solid black;
+    padding: 0 1% 3px 1%;
+    background-color: #eceaeb;
+    top: 44%;
+    font-weight: bolder;
+    border-radius: 10px;
 }
 
 
@@ -786,6 +871,7 @@ html, body{
 
     .AboutContainerHeading h1{
         font-size: 2em;
+        line-height: 1;
     }
 
     .AboutContainerTextParaContainerPlus{
@@ -799,6 +885,38 @@ html, body{
     .aboutContainerRight{
         width: 100%;
         padding-top: 9%;
+    }
+
+    .cards{
+        padding-top: 4%;
+        background-image: url(./images/imageTwenty.png), url(./images/imageTwentyOne.png);
+        background-repeat: no-repeat;
+        background-position: left -19rem top 7rem, right -12rem bottom 0rem;
+        background-size: 30rem 8rem, 26rem 5rem;
+    }
+
+    .cardsHeading{
+        width: 100%;
+        padding-bottom: 8%;
+    }
+
+    .cardsHeading h1{
+        display: inline;
+        font-size: 1.5em;
+    }
+
+    .cardLeftArrow,.cardRightArrow{
+        display: none;
+    }
+
+    .allCards{
+        width: 100%;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .cardOne,.cardTwo,.cardThree{
+        width: 70%;
     }
 
 }
