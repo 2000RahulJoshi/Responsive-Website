@@ -455,11 +455,79 @@ html, body{
 .chooseLocationContentRight{
     width: 50%;
     color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.chooseLocationContentRight:hover{
+    scale: 1.1;
 }
 
 .chooseLocationHeading{
     display: none;
 }
+
+.aboutContainer{
+    width: 100%;
+    padding: 8% 9% 7% 9%;
+}
+
+.aboutContainerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutContainerLeft{
+    width: 62%;
+}
+
+.aboutContainerRight{
+    width: 32%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aboutContainerRight:hover{
+    scale: 1.1;
+}
+
+.AboutContainerHeading h1{
+    font-size: 74px;
+    line-height: 0.8;
+}
+
+.AboutContainerHeading{
+    padding-bottom: 16%;
+}
+
+.lineOne{
+    border: 1px solid black;
+}
+
+.AboutContainerTextParaContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AboutContainerTextParaContainerpara{
+    padding: 3% 0 3% 2%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.AboutContainerTextParaContainerPlus{
+    font-size: 40px;
+    font-weight: bolder
+}
+
+.lineTwo{
+    border: 1px solid black;
+}
+
+
+
+
 
 
 
@@ -700,6 +768,37 @@ html, body{
         background-repeat: no-repeat;
         background-position: left -6rem top 37rem;
         background-size: 21rem 4rem;
+    }
+
+    .aboutContainerLeft{
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutContainerContent{
+        flex-direction: column;
+    }
+
+    .AboutContainerHeading{
+        width: 100%;
+        padding-bottom: 8%;
+    }
+
+    .AboutContainerHeading h1{
+        font-size: 2em;
+    }
+
+    .AboutContainerTextParaContainerPlus{
+        display: none;
+    }
+
+    .AboutContainerTextParaContainerpara p{
+        font-size: 12px;
+    }
+
+    .aboutContainerRight{
+        width: 100%;
+        padding-top: 9%;
     }
 
 }
