@@ -384,6 +384,7 @@ html, body{
     .imageSlidesContainer{
         flex-direction: column;
         gap: 11vh;
+        padding-top: 6%;
     }
 
     .imageSlidesContainerOne,.imageSlidesContainerTwo,.imageSlidesContainerThree{
