@@ -417,6 +417,50 @@ html, body{
     padding-top: 4%;
 }
 
+.chooseLocation{
+    width: 100%;
+    background-color: black;
+    padding: 6% 9% 7% 9%;
+    background-image: url(./images/imageSeventeen.png);
+    background-repeat: no-repeat;
+    background-position: left -9rem top 32rem;
+    background-size: 31rem 6rem
+}
+
+.chooseLocationContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooseLocationContentLeft{
+    color: white;
+    width: 40%;
+}
+
+.chooseLocationContentLeftHeading h1{
+    font-size: 50px;
+    line-height: 1;
+    padding-bottom: 20%;
+}
+
+.chooseLocationContentLeftParaOne p,.chooseLocationContentLeftParaTwo p{
+    font-size: 12px;
+    padding-top: 2.5%;
+}
+
+.chooseLocationContentLeftParaTwo{
+    padding-top: 9%;
+}
+
+.chooseLocationContentRight{
+    width: 50%;
+    color: white;
+}
+
+.chooseLocationHeading{
+    display: none;
+}
+
 
 
 
@@ -539,6 +583,7 @@ html, body{
         background-repeat: no-repeat;
         background-position: right -8rem top 0rem, left 0rem top 8rem;
         background-size: 16rem 17rem, 7rem 2rem;
+        padding-bottom: 4%;
     }
 
     .AeroplaneIcon{
@@ -613,6 +658,48 @@ html, body{
 
     .unseenPlacesContainerTwoRightBottomArrow{
         display: none;
+    }
+
+    .chooseLocationContent{
+        flex-direction: column-reverse;
+    }
+
+    .chooseLocationContentRight{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 6%;
+    }
+
+    .chooseLocationHeading{
+        display: block;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        line-height: 1;
+    }
+
+    .chooseLocationContentLeftHeading{
+        display: none;
+    }
+
+    .chooseLocationContentLeftParaTwo{
+        display: none;
+    }
+
+    .chooseLocationContentLeft{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .chooseLocationContentLeftParaOne{
+        width: 100%;
+        text-align: center;
+    }
+
+    .chooseLocation{
+        background-image: url(./images/imageSeventeen.png);
+        background-repeat: no-repeat;
+        background-position: left -6rem top 37rem;
+        background-size: 21rem 4rem;
     }
 
 }
