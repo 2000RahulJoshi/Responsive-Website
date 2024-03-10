@@ -287,7 +287,84 @@ html, body{
     width: 70%;
 }
 
+.unseenPlaces{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 11%;
+    flex-wrap: wrap;
+    /* padding-bottom: 12%; */
+    background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png);
+    background-repeat: no-repeat;
+    background-position: right -8rem top 1rem, left 7rem top 24rem;
+    background-size: 26rem 34rem, 20rem 5rem;
+}
 
+
+.AeroplaneIcon{
+    width: 3%;
+    position: relative;
+    animation-name: flying-aeroplane-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flying-aeroplane-up {
+    from{
+        top: 0;
+    }
+    to{
+        top: -14rem;
+    }
+}
+
+.unseenPlacesContainerOne{
+    padding-bottom: 12%;
+}
+
+.unseenPlacesContainerOneHeading{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.unseenPlacesContainerOneHeading h2{
+    font-size: 65px;
+    line-height: 0.9;
+}
+
+.unseenPlacesContainerOnePara{
+    text-align: center;
+    padding-top: 9%;
+}
+
+.unseenPlacesContainerOnePara p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.unseenPlacesContainerTwo{
+    position: relative;
+    width: 100%;
+    padding: 0% 9% 4% 9%;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.unseenPlacesContainerTwoLeft{
+    position: relative;
+    width: 40%;
+}
+
+.tape{
+    position: absolute;
+    height: 28%;
+    width: 8%;
+    margin-top: 41%;
+    margin-left: -3.7%
+}
 
 
 
@@ -404,6 +481,50 @@ html, body{
         background-repeat: no-repeat;
         background-position: left -5.5rem top 1rem, right -22px top 21rem;
         background-size: 7rem 56rem, 3.4rem 44rem;
+    }
+
+    .unseenPlaces{
+        padding-top: 4%;
+        background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png);
+        background-repeat: no-repeat;
+        background-position: right -8rem top 0rem, left 0rem top 8rem;
+        background-size: 16rem 17rem, 7rem 2rem;
+    }
+
+    .AeroplaneIcon{
+        width: 10%;
+        transform: rotate(90deg);
+        animation-name: flying-aeroplane-right;
+        animation-duration: 2.3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes flying-aeroplane-right {
+        from{
+            left: -36vw;
+        }
+        to{
+            left: 36vw;
+        }
+    }
+
+    .unseenPlacesContainerOne{
+        padding: 0 4% 6% 4%;
+    }
+
+    .unseenPlacesContainerOnePara{
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+
+    .unseenPlacesContainerOneHeading h2{
+        font-size: 2em;
+        display: inline;
+    }
+
+    .unseenPlacesContainerOnePara p{
+        font-size: 1em;
     }
 
 }
