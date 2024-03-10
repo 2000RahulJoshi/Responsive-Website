@@ -119,6 +119,12 @@ html, body{
 
 .topContainerRight{
     width: 55%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.topContainerRight:hover{
+    scale: 1.1;
 }
 
 .topContainerHeading h1{
@@ -222,6 +228,65 @@ html, body{
     cursor: pointer;
 }
 
+.imageSlides{
+    width: 100%;
+    padding: 9% 9% 7% 9%;
+    background-image: url(./images/imageNine.png), url(./images/imageTen.png);
+    background-repeat: no-repeat;
+    background-position: left -5rem top 1rem, right -22px top 18rem;
+    background-size: 7rem 40rem, 5rem 22rem;
+}
+
+.imageSlidesContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imageSlidesContainerOne,.imageSlidesContainerTwo,.imageSlidesContainerThree{
+    width: 30%;
+    transition: 0.3s;
+    position: relative;
+}
+
+.imageSlidesImg{
+    padding-bottom: 8%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.imageSlidesContainerOne:hover,.imageSlidesContainerTwo:hover,.imageSlidesContainerThree:hover{
+    scale: 1.1;
+}
+
+.imageSlidesEmpty{
+    width: 15%;
+    border: 2px solid black;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.imageSlidesHeading{
+    padding: 4% 0;
+}
+
+.imageSlidesHeading h2{
+    font-size: 30px;
+    line-height: 0.9;
+}
+
+.imageSlidesPara p{
+    font-size: 14px;
+}
+
+
+.imageSlidesEmpty:hover{
+    cursor: pointer;
+    width: 70%;
+}
+
 
 
 
@@ -316,5 +381,28 @@ html, body{
         background-position: left -16% top 26%, right -13% top 93%;
     }
 
+    .imageSlidesContainer{
+        flex-direction: column;
+        gap: 11vh;
+    }
+
+    .imageSlidesContainerOne,.imageSlidesContainerTwo,.imageSlidesContainerThree{
+        width: 100%;
+    }
+
+    .imageSlidesHeading h2{
+        display: inline;
+    }
+
+    .imageSlidesEmpty{
+        width: 40%;
+    }
+
+    .imageSlides{
+        background-image: url(./images/imageNine.png), url(./images/imageTen.png);
+        background-repeat: no-repeat;
+        background-position: left -5.5rem top 1rem, right -22px top 21rem;
+        background-size: 7rem 56rem, 3.4rem 44rem;
+    }
 
 }
