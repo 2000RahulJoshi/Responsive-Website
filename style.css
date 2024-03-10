@@ -349,23 +349,73 @@ html, body{
     position: relative;
     width: 100%;
     padding: 0% 9% 4% 9%;
-    /* border: 2px solid red; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .unseenPlacesContainerTwoLeft{
     position: relative;
-    width: 40%;
+    width: 37%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.unseenPlacesContainerTwoLeft:hover{
+    scale: 1.1;
 }
 
 .tape{
     position: absolute;
     height: 28%;
-    width: 8%;
-    margin-top: 41%;
-    margin-left: -3.7%
+    width: 9%;
+    margin-top: 51%;
+    margin-left: -4.7%;
 }
 
+.unseenPlacesContainerTwoRight{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+}
+
+.unseenPlacesContainerTwoTopRight{
+    width: 57%;
+    padding-bottom: 3%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.unseenPlacesContainerTwoTopRight:hover{
+    scale: 1.1;
+}
+
+.unseenPlacesContainerTwoBottomRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.unseenPlacesContainerTwoRightBottomLeft{
+    width: 38%;
+    font-size: 14.7px;
+    text-decoration: underline;
+}
+
+.unseenPlacesContainerTwoRightBottomRightPara{
+    width: 57%;
+    padding-top: 1%;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.unseenPlacesContainerTwoRightBottomRightParaOne{
+    padding-bottom: 3%;
+}
+
+.unseenPlacesContainerTwoRightBottomArrow{
+    padding-left: 63%;
+    padding-top: 4%;
+}
 
 
 
@@ -525,6 +575,44 @@ html, body{
 
     .unseenPlacesContainerOnePara p{
         font-size: 1em;
+    }
+
+    .unseenPlacesContainerTwo{
+        flex-direction: column;
+    }
+
+    .unseenPlacesContainerTwoLeft{
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 9%;
+    }
+
+    .unseenPlacesContainerTwoRight{
+        width: 100%;
+    }
+
+    .unseenPlacesContainerTwoTopRight{
+        width: 100%;
+        padding-bottom: 8%;
+    }
+
+    .unseenPlacesContainerTwoBottomRight{
+        flex-direction: column;
+    }
+
+    .unseenPlacesContainerTwoRightBottomLeft{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 7%;
+    }
+
+    .unseenPlacesContainerTwoRightBottomRightPara{
+        width: 100%;
+        text-align: center;
+    }
+
+    .unseenPlacesContainerTwoRightBottomArrow{
+        display: none;
     }
 
 }
