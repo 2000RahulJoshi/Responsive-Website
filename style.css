@@ -568,12 +568,8 @@ html, body{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: 0.5s;
 }
 
-.cardOne:hover,.cardTwo:hover,.cardThree:hover{
-    scale: 1.1;
-}
 
 .cardIcon{
     padding-bottom: 6%;
@@ -609,6 +605,65 @@ html, body{
     font-weight: bolder;
     border-radius: 10px;
 }
+
+.formSection{
+    width: 100%;
+    padding: 5% 9% 4% 9%;
+}
+
+.formSectionContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formSectionLeft{
+    width: 43%;
+}
+
+.formSectionLeftHeading {
+    font-size: 40px;
+    padding-bottom: 5%;
+}
+
+.formSectionLeftUserInfo input, button, textarea {
+    font-size: 19px;
+    width: 90%;
+    resize: none;
+    padding: 2% 0 2% 5%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #eceaeb;
+}
+
+.inputFormSpace {
+    padding-bottom: 5%;
+}
+
+.formSectionLeftUserInfo button {
+    background-color: black;
+    color: white;
+    padding: 3% 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.formSectionLeftUserInfo button:hover{
+    scale: 1.1;
+}
+
+
+
+.formSectionRight{
+    width: 51%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.formSectionRight:hover{
+    scale: 1.1;
+}
+
+
 
 
 
@@ -918,5 +973,49 @@ html, body{
     .cardOne,.cardTwo,.cardThree{
         width: 90%;
     }
+
+    .formSectionContent{
+        flex-direction: column-reverse;
+    }
+
+    .formSectionLeft{
+        width: 100%;
+    }
+
+    .formSectionLeftHeading{
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .formSectionLeftHeading h1{
+        font-size: 1.3em;
+    }
+
+    .inputFormSpace input,textarea{
+        width: 100%;
+    }
+
+    .formSectionLeftUserInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formSubmitButton{
+        align-self: center;
+        width: 50%;
+        padding: 1% 3% 5% 3%;
+    }
+
+    .button{
+        font-size: 14px;
+        padding: 3% 0;
+    }
+
+    .formSectionRight{
+        width: 100%;
+        padding-top: 7%;
+    }
+
 
 }
