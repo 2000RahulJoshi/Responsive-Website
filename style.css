@@ -154,7 +154,7 @@ html, body{
 }
 
 .reserveTicketButton:hover{
-    background-color: grey;
+    background-color: crimson;
 }
 
 .topContainerRight h1{
@@ -167,12 +167,14 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5% 9% 4% 9%;
+    padding: 3% 9% 3% 9%;
+    background-image: url(./images/imageFour.png), url(./images/imageFive.png);
+    background-repeat: no-repeat;
+    background-size: 38% 53%, 35% 29%;
+    background-position: left -9% top 26%, right -4% top 76%;
 }
 
 .createMemoryContainerText{
-    width: 40%;
-    /* padding: 3% 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,7 +191,8 @@ html, body{
 } 
 
 .createMemoryContainerTextTwo{
-    padding: 6% 0;
+    width: 39%;
+    padding: 3% 0%;
 }
 
 .createMemoryContainerTextTwo p{
@@ -200,8 +203,9 @@ html, body{
 
 .createMemoryContainerTextThree{
     border: 1px solid white;
-    padding: 3% 5.7%;
+    padding: 1% 2.5%;
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .createMemoryContainerTextThree button{
@@ -210,6 +214,12 @@ html, body{
     border: none;
     font-size: 15px;
     font-weight: bolder;
+    cursor: pointer;
+}
+
+.createMemoryContainerTextThree:hover{
+    background-color: crimson;
+    cursor: pointer;
 }
 
 
@@ -245,8 +255,6 @@ html, body{
     }
 
     .topContainerContent{
-        /* display: flex; */
-        /* flex-direction: column; */
         flex-direction: column-reverse;
     }
 
@@ -284,4 +292,27 @@ html, body{
     .reserveTicketButton button{
         font-size: 12px;
     }
+
+    .createMemoryContainerTextOne{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .createMemoryContainerTextOne h2{
+        font-size: 1.8em;
+        display: inline;
+    }
+
+    .createMemoryContainerTextTwo{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .CreateMemoryContainer{
+        background-size: 31% 22%, 31% 22%;
+        background-position: left -16% top 26%, right -13% top 93%;
+    }
+
+
 }
