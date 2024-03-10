@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: gray;
@@ -91,6 +95,12 @@ html, body{
 
 .topContainer{
     width: 100%;
+    background-image: url(./images/imageTwo.png), url(./images/imageThree.png);
+    background-position: left -18rem top 9rem, right -2rem top 20rem;
+    background-repeat: no-repeat;
+    padding-bottom: 4%;
+    background-size: auto auto, 10rem 20rem;
+    padding-bottom: 4%;
 }
 
 
@@ -147,6 +157,10 @@ html, body{
     background-color: grey;
 }
 
+.topContainerRight h1{
+    display: none;
+}
+
 
 
 
@@ -165,6 +179,10 @@ html, body{
 
 
 @media (max-width:600px) {
+    .topContainer{
+        background-size: auto auto ,auto auto;
+    }
+
     .navBar i{
         display: block;
         font-size: 6vmax;
@@ -175,8 +193,10 @@ html, body{
         display: none;
     }
 
-    .topContainer{
-        flex-direction: column;
+    .topContainerContent{
+        /* display: flex; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
     }
 
     .topContainerLeft{
@@ -184,11 +204,33 @@ html, body{
         text-align: center;
     } 
 
+    .topContainerLeft h1{
+        display: none;
+    }
+
+    .topContainerRight h1{
+        display: block;
+        text-align: center;
+    }
+
+    
     .topContainerRight{
         width: 100%;
     }
 
     .topContainerHeading h1{
-        font-size: 1.5em;
+        font-size: 2em;
+    }
+
+    .topContainerRight img{
+        padding-top: 3%;
+    }
+
+    .reserveTicketButton{
+        width: 40%;
+    }
+
+    .reserveTicketButton button{
+        font-size: 12px;
     }
 }
