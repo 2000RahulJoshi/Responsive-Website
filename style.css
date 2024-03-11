@@ -718,6 +718,7 @@ html, body{
 
 .copyRight{
     text-align: center;
+    cursor: pointer;
 }
 
 .createMemoryContainerTextThree {
