@@ -33,7 +33,6 @@ html, body{
     padding: 5% 9% 1% 9%;
     font-size: 19px;
     flex-wrap: wrap;
-    border-bottom: 1px solid #dada;
 }
 
 .navLeft{
@@ -116,11 +115,11 @@ html, body{
 
 .topContainerLeft{
     padding: 0 4% 0 0;
-    width: 40%;
+    width: 41%;
 }
 
 .topContainerRight{
-    width: 55%;
+    width: 54%;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -139,11 +138,13 @@ html, body{
 }
 
 .topContainerPara{
+    padding-top: 2%;
     padding-bottom: 8%;
+    text-align: justify;
 }
 
 .reserveTicketButton{
-    width: 40%;
+    width: 45%;
     padding: 3%;
     background-color: black;
     cursor: pointer;
@@ -422,11 +423,11 @@ html, body{
 .chooseLocation{
     width: 100%;
     background-color: black;
-    padding: 6% 9% 7% 9%;
+    padding: 7% 0% 7% 9%;
     background-image: url(./images/imageSeventeen.png);
     background-repeat: no-repeat;
-    background-position: left -9rem top 32rem;
-    background-size: 31rem 6rem
+    background-position: left -3rem top 37rem;
+    background-size: 31rem 6rem;
 }
 
 .chooseLocationContent{
@@ -440,22 +441,27 @@ html, body{
 }
 
 .chooseLocationContentLeftHeading h1{
-    font-size: 50px;
-    line-height: 1;
-    padding-bottom: 20%;
+    font-size: 60px;
+    line-height: 0.9;
+    padding-bottom: 21%;
 }
 
+.chooseLocationContentLeftParaOne,.chooseLocationContentLeftParaTwo{
+    width: 92%;
+}
+
+
 .chooseLocationContentLeftParaOne p,.chooseLocationContentLeftParaTwo p{
-    font-size: 12px;
-    padding-top: 2.5%;
+    font-size: 13px;
+    padding-top: 2.8%;
 }
 
 .chooseLocationContentLeftParaTwo{
-    padding-top: 9%;
+    padding-top: 10%;
 }
 
 .chooseLocationContentRight{
-    width: 50%;
+    width: 51%;
     color: white;
     transition: 0.5s;
     cursor: pointer;
@@ -471,7 +477,7 @@ html, body{
 
 .aboutContainer{
     width: 100%;
-    padding: 8% 9% 5% 9%;
+    padding: 8% 9% 14% 9%;
 }
 
 .aboutContainerContent{
@@ -532,8 +538,8 @@ html, body{
     padding: 4% 9% 6% 9%;
     background-image: url(./images/imageTwenty.png), url(./images/imageTwentyOne.png);
     background-repeat: no-repeat;
-    background-position: left -7rem top 1rem, right -13rem bottom 1rem;
-    background-size: 30rem 8rem, 35rem 5rem;
+    background-position: left -4rem top 1rem, right -7rem bottom 0rem;
+    background-size: 26rem 8rem, 30rem 5rem;
 }
 
 .cardsHeading{
@@ -608,7 +614,7 @@ html, body{
 
 .formSection{
     width: 100%;
-    padding: 5% 9% 4% 9%;
+    padding: 5% 9% 8% 9%;
 }
 
 .formSectionContent{
@@ -623,6 +629,10 @@ html, body{
 .formSectionLeftHeading {
     font-size: 40px;
     padding-bottom: 5%;
+}
+
+.formSubmitButton{
+    padding-top: 4%;
 }
 
 .formSectionLeftUserInfo input, button, textarea {
@@ -667,7 +677,7 @@ html, body{
     padding: 5% 9% 4% 9%;
     background-image: url(./images/imageTwentyThree.png);
     background-repeat: no-repeat;
-    background-position: left -30rem bottom 4rem;
+    background-position: left -30rem bottom 1rem;
     background-size: 54rem 7rem;
     background-color: #c5c5c5;
 }
@@ -718,6 +728,19 @@ html, body{
     width: 23%;
 }
 
+.redirectLinksPhone{
+    display: flex;
+    display: none;
+}
+
+.footerAnchor,.footerAnchorGap a{
+    cursor: pointer;
+}
+
+.footerAnchor:hover,.footerAnchorGap a:hover{
+    font-weight: bolder
+}
+
 
 
 
@@ -742,7 +765,7 @@ html, body{
 
 @media (max-width:600px) {
     .topContainer{
-        background-size: auto auto ,auto auto;
+        background-image: none;
     }
 
     .navBar i{
@@ -804,6 +827,10 @@ html, body{
         display: inline;
     }
 
+    .createMemoryContainerTextTwo p{
+        text-align: justify;
+    }
+
     .createMemoryContainerTextTwo{
         width: 100%;
         text-align: center;
@@ -814,7 +841,7 @@ html, body{
         padding-top: 11%;
         padding-bottom: 12%;
         background-size: 31% 22%, 31% 22%;
-        background-position: left -16% top 26%, right -13% top 93%;
+        background-position: left -16% top 22%, right -13% top 93%;
     }
 
     .createMemoryContainerTextThree{
@@ -823,6 +850,7 @@ html, body{
 
     .createMemoryContainerTextThree button{
         font-size: 10px;
+        padding-bottom: 6%;
     }
 
     .imageSlidesContainer{
@@ -844,14 +872,12 @@ html, body{
     }
 
     .imageSlides{
-        background-image: url(./images/imageNine.png), url(./images/imageTen.png);
-        background-repeat: no-repeat;
-        background-position: left -5.5rem top 1rem, right -22px top 21rem;
-        background-size: 7rem 56rem, 3.4rem 44rem;
+        background-image: none;
+        padding-bottom: 6%;
     }
 
     .unseenPlaces{
-        padding-top: 4%;
+        padding-top: 5%;
         background-image: url(./images/imageFourteen.png), url(./images/imageFifteen.png);
         background-repeat: no-repeat;
         background-position: right -8rem top 0rem, left 0rem top 8rem;
@@ -887,7 +913,7 @@ html, body{
     }
 
     .unseenPlacesContainerOneHeading h2{
-        font-size: 2em;
+        font-size: 1.8em;
         display: inline;
     }
 
@@ -918,15 +944,19 @@ html, body{
         flex-direction: column;
     }
 
+    .formSection {
+        padding-bottom: 3%;
+    }
+
     .unseenPlacesContainerTwoRightBottomLeft{
         width: 100%;
-        text-align: center;
+        text-align: justify;
         padding-bottom: 7%;
     }
 
     .unseenPlacesContainerTwoRightBottomRightPara{
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
 
     .unseenPlacesContainerTwoRightBottomArrow{
@@ -946,8 +976,18 @@ html, body{
     .chooseLocationHeading{
         display: block;
         padding-top: 2%;
-        padding-bottom: 5%;
+        padding-bottom: 7%;
         line-height: 1;
+    }
+
+
+    .chooseLocationContentLeftParaOne p{
+        padding-top: 5%;
+        text-align: justify;
+    }
+
+    .AboutContainerTextPara,.AboutContainerHeading{
+        text-align: justify;
     }
 
     .chooseLocationContentLeftHeading{
@@ -973,6 +1013,7 @@ html, body{
         background-repeat: no-repeat;
         background-position: left -6rem top 37rem;
         background-size: 21rem 4rem;
+        padding: 6% 9% 7% 9%;
     }
 
     .aboutContainerLeft{
@@ -1008,11 +1049,7 @@ html, body{
     }
 
     .cards{
-        padding-top: 4%;
-        background-image: url(./images/imageTwenty.png), url(./images/imageTwentyOne.png);
-        background-repeat: no-repeat;
-        background-position: left -19rem top 7rem, right -12rem bottom 0rem;
-        background-size: 30rem 8rem, 26rem 5rem;
+        background-image: none;
     }
 
     .cardsHeading{
@@ -1022,7 +1059,7 @@ html, body{
 
     .cardsHeading h1{
         display: inline;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .cardLeftArrow,.cardRightArrow{
@@ -1036,7 +1073,11 @@ html, body{
     }
 
     .cardOne,.cardTwo,.cardThree{
-        width: 90%;
+        width: 94%;
+    }
+
+    .userCardDetail{
+        text-align: justify;
     }
 
     .formSectionContent{
@@ -1054,6 +1095,7 @@ html, body{
 
     .formSectionLeftHeading h1{
         font-size: 1.3em;
+        text-align: justify;
     }
 
     .inputFormSpace input,textarea{
@@ -1097,8 +1139,7 @@ html, body{
 
     .footerContentLeft{
         width: 100%;
-        text-align: center;
-        padding-bottom: 5%;
+        padding-bottom: 8%;
     }
 
     .footerContentLeft h1{
@@ -1123,6 +1164,27 @@ html, body{
 
     .copyRight{
         font-size: 12px;
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+
+    .redirectLinksPc{
+        display: none;
+    }
+
+    .redirectLinksPhone{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .redirectLinksPhone a{
+        color: black;
+        font-size: 13px;
+    }
+
+    .footerAnchorGap{
+        padding-bottom: 7%;
     }
 
 }

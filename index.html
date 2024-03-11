@@ -15,17 +15,17 @@
       <div class="navBar">
         <div class="navLeft">
           <i class="ri-menu-line"></i>
-          <a href="" class="navAnchor"><h4 class="homeButton">Home</h4></a>
-          <a href="" class="navAnchor">Guides</a>
-          <a href="" class="navAnchor">Flights</a>
-          <a href="" class="navAnchor">About</a>
+          <a href="#home" class="navAnchor"><h4 class="homeButton">Home</h4></a>
+          <a href="#guide" class="navAnchor">Guides</a>
+          <a href="#flights" class="navAnchor">Flights</a>
+          <a href="#about" class="navAnchor">About</a>
         </div>
         <div class="navRight">
           <h4>Contact Us</h4>
         </div>
       </div>
 
-      <div class="topContainer">
+      <div class="topContainer" id="home">
         <div class="topContainerContent">
           <div class="topContainerLeft">
             <div class="topContainerHeading">
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="imageSlides">
+      <div class="imageSlides" id="guide">
 
         <div class="imageSlidesContainer">
             <div class="imageSlidesContainerOne">
@@ -149,7 +149,7 @@
 
       </div>
 
-      <div class="unseenPlaces">
+      <div class="unseenPlaces" id="flights">
         <div class="AeroplaneIcon">
           <img src="./images/imageEleven.png" alt="Aeroplane Icon" width="100%">
         </div>
@@ -157,7 +157,7 @@
         <div class="unseenPlacesContainerOne">
           <div class="unseenPlacesContainerOneHeading">
             <h2>See places you've</h2>
-            <h2><ins class="underLineText">never</ins> seen before</h2>
+            <h2><ins class="underLineText" style="font-style: italic;">never</ins> seen before</h2>
           </div>
           <div class="unseenPlacesContainerOnePara">
             <p>Lorem Ipsum Dolor | Lorem Ipsum Dolor | Lorem Ipsum Dolor</p>
@@ -255,7 +255,7 @@
         </div>
       </div>
 
-      <div class="aboutContainer">
+      <div class="aboutContainer" id="about">
         
         <div class="aboutContainerContent">
 
@@ -442,25 +442,48 @@
             <h2>Quick Links</h2>
           </div>
 
-          <div class="redirectLinks">
+          <div class="redirectLinksPc">
             <div class="redirectLinksOne">
-              <a href="" class="footerAnchor">Home</a> 
-              <a href="" class="footerAnchor">Travels</a>  
-              <a href="" class="footerAnchor">Recommendations</a>  
-              <a href="" class="footerAnchor">Mission Statements</a> 
+              <a class="footerAnchor">Home</a> 
+              <a class="footerAnchor">Travels</a>  
+              <a class="footerAnchor">Recommendations</a>  
+              <a class="footerAnchor">Mission Statements</a> 
             </div>
 
             <div class="redirectLinksTwo">
-              <a href="" class="footerAnchor">About US</a> 
-              <a href="" class="footerAnchor">Promo Flights</a>  
-              <a href="" class="footerAnchor">Guids</a>  
-              <a href="" class="footerAnchor">The Team</a> 
+              <a class="footerAnchor">About US</a> 
+              <a class="footerAnchor">Promo Flights</a>  
+              <a class="footerAnchor">Guids</a>  
+              <a class="footerAnchor">The Team</a> 
             </div>
             <div class="redirectLinksThree" >
-              <a href="" class="footerAnchor">My Travel Logs</a> 
-              <a href="" class="footerAnchor">Travel Routes</a>  
-              <a href="" class="footerAnchor">Blogs</a>  
-              <a href="" class="footerAnchor">Contact Us</a> 
+              <a class="footerAnchor">My Travel Logs</a> 
+              <a class="footerAnchor">Travel Routes</a>  
+              <a class="footerAnchor">Blogs</a>  
+              <a class="footerAnchor">Contact Us</a> 
+            </div>
+          </div>
+
+          <div class="redirectLinksPhone">
+            <div class="phoneLinkOne">
+              <p class="footerAnchorGap"><a>Home</a></p>
+              <p class="footerAnchorGap"><a>About US</a></p>
+              <p class="footerAnchorGap"><a>Recommendations</a></p>
+              <p class="footerAnchorGap"><a>My Travel Logs</a></p>
+            </div>
+            
+            <div class="phoneLinksTwo">
+              <p class="footerAnchorGap"><a>Blogs</a></p>
+              <p class="footerAnchorGap"><a>Guids</a></p>
+              <p class="footerAnchorGap"><a>Travel Routes</a></p>
+              <p class="footerAnchorGap"><a href="">Travels</a></p>
+            </div>
+            
+            <div class="phoneLinkThree">
+              <p class="footerAnchorGap"><a>Mission Statements</a></p>
+              <p class="footerAnchorGap"><a>Promo Flights</a></p>
+              <p class="footerAnchorGap"><a>The Team</a></p>
+              <p class="footerAnchorGap"><a>Contact Us</a></p>
             </div>
           </div>
         </div>
@@ -468,8 +491,6 @@
 
       <p class="copyRight">2021-2022 My Log Travels.All Rights Reserved.</p>
     </div>
-
-      
 
     </div>
   </body>
