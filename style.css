@@ -663,6 +663,63 @@ html, body{
     scale: 1.1;
 }
 
+.footer{
+    padding: 5% 9% 4% 9%;
+    background-image: url(./images/imageTwentyThree.png);
+    background-repeat: no-repeat;
+    background-position: left -30rem bottom 4rem;
+    background-size: 54rem 7rem;
+    background-color: #c5c5c5;
+}
+
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+
+.footerContentLeft {
+    width: 25%;
+    font-size: 29px;
+    line-height: 1
+}
+
+.footerContentRight{
+    width: 72%;
+}
+
+.quickLinks{
+    padding-bottom: 4%;
+}
+
+.redirectLinksOne,.redirectLinksTwo,.redirectLinksThree{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.footerAnchor{
+    width: 22%;
+    color: black;
+}
+
+.copyRight{
+    text-align: center;
+}
+
+.createMemoryContainerTextThree {
+    border: 1px solid white;
+    padding: 1% 0.5%;
+    border-radius: 4px;
+    transition: 0.3s;
+    width: 23%;
+}
+
+
+
 
 
 
@@ -750,14 +807,22 @@ html, body{
     .createMemoryContainerTextTwo{
         width: 100%;
         text-align: center;
-        padding-bottom: 5%;
+        padding-bottom: 9%;
     }
 
     .CreateMemoryContainer{
-        padding-top: 8%;
-        padding-bottom: 8%;
+        padding-top: 11%;
+        padding-bottom: 12%;
         background-size: 31% 22%, 31% 22%;
         background-position: left -16% top 26%, right -13% top 93%;
+    }
+
+    .createMemoryContainerTextThree{
+        width: 36%;
+    }
+
+    .createMemoryContainerTextThree button{
+        font-size: 10px;
     }
 
     .imageSlidesContainer{
@@ -1015,7 +1080,49 @@ html, body{
     .formSectionRight{
         width: 100%;
         padding-top: 7%;
+        padding-bottom: 8%;
     }
 
+    .footer{
+        background-image: url(./images/imageTwentyThree.png);
+        background-repeat: no-repeat;
+        background-position: left -61rem bottom 2rem;
+        background-size: 54rem 7rem;
+    }
+
+    .footerContent{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footerContentLeft{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .footerContentLeft h1{
+        display: inline;
+        font-size: 1.4em;
+    }
+
+    .footerContentRight{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .footerAnchor{
+        font-size: 10px;
+    }
+
+    .quickLinks{
+        text-align: center;
+        font-size: 1em;
+        display: none;
+    }
+
+    .copyRight{
+        font-size: 12px;
+    }
 
 }
