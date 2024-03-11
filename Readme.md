@@ -1,5 +1,5 @@
 # Introduction :-
-### This is a mobile responsive landing page that I have designed using html, css .
+### This is a mobile responsive landing page that I have designed using html, css and flex-box property.
 
 
 # Overview :-
