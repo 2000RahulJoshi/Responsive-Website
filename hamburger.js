@@ -6,5 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
         menuBtnBurger.classList.toggle("active");
         navItems.classList.toggle("active");
     })
+
+    window.addEventListener("scroll",()=>{
+        menuBtnBurger.classList.remove("active");
+        navItems.classList.remove("active");        
+    })
  
 });

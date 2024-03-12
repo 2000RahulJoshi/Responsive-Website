@@ -43,7 +43,8 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    transition: 0.5s;
+    opacity: 0.9;
 }
 
 .navAnchorHamburger{
@@ -796,6 +797,8 @@ html, body{
         left: 0;
         background-color: #eceaeb;
         width: 100%;
+        transition: 0.5s;
+        opacity: 1;
     }
 
     .navBar i{
@@ -1033,7 +1036,7 @@ html, body{
         padding-bottom: 3%;
     }
 
-    .chooseLocationContentLeftParaOne{
+    .chooseLocationContentLeftParaOne,.chooseLocationContentLeftParaTwo{
         width: 100%;
         text-align: center;
     }
