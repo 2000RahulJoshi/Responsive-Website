@@ -607,7 +607,7 @@ html, body{
 }
 
 .userCardDetail {
-    text-align: center;
+    text-align: justify;
     padding: 0 6% 0 6%;
     font-size: 18px;
 }
@@ -1111,6 +1111,7 @@ html, body{
         /* width: 94%; */
         padding: 15% 0;
         width: 100%;
+        word-break: break-all;
     }
 
     .userCardDetail{

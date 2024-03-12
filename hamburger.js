@@ -11,5 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
         menuBtnBurger.classList.remove("active");
         navItems.classList.remove("active");        
     })
+
+    document.addEventListener("click", function (e) {
+        const target = e.target;
+        if (!navItems.contains(target) && !menuBtnBurger.contains(target)) {
+            menuBtnBurger.classList.remove("active");
+            navItems.classList.remove("active"); 
+        }
+    });
+
  
 });
