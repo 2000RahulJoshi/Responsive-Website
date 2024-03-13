@@ -518,6 +518,10 @@ html, body{
     scale: 1.1;
 }
 
+.AboutContainerHeading img{
+    display: none;
+}
+
 .AboutContainerHeading h1{
     font-size: 74px;
     line-height: 0.8;
@@ -1020,6 +1024,8 @@ html, body{
         text-align: justify;
     }
 
+
+
     .AboutContainerTextPara,.AboutContainerHeading{
         text-align: justify;
     }
@@ -1080,6 +1086,14 @@ html, body{
     .aboutContainerRight{
         width: 100%;
         padding-top: 9%;
+        display: none;
+    }
+
+    .AboutContainerHeading img{
+        display: block;
+        padding-top: 9%;
+        width: 100%;
+        padding-bottom: 2%;
     }
 
     .cards{
